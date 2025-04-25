@@ -6,7 +6,7 @@ import { FilterState } from '@/types/doctor';
 
 interface URLParamsHandlerProps {
   filterState: FilterState;
-  setFilterState: (state: FilterState) => void;
+  setFilterState: React.Dispatch<React.SetStateAction<FilterState>>;
 }
 
 export default function URLParamsHandler({ filterState, setFilterState }: URLParamsHandlerProps) {
